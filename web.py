@@ -9,8 +9,8 @@ def add_todo():
 todos = functions.get_todos()
 
 st.title("April's To-Do App")
-st.subheader("list of things to-do")
-st.write("Let's get productive!")
+st.subheader("Simplify Your Day, Every Day ")
+st.write("Let's get organized!")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
