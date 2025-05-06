@@ -6,13 +6,11 @@ def add_todo():
     todos.append(todo)
     functions.write_todos(todos)
 
-
-
 todos = functions.get_todos()
 
-st.title("My Todo App")
-st.subheader("this is my todo app")
-st.write("this app is used for productivity")
+st.title("April's To-Do App")
+st.subheader("list of things to-do")
+st.write("Let's get productive!")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
@@ -25,6 +23,4 @@ for index, todo in enumerate(todos):
 st.text_input(label="hidden", label_visibility="hidden", placeholder="Add a To-Do...😎",
               on_change=add_todo, key='new_todo')
 
-print("Hello")
 
-st.session_state
