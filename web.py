@@ -8,7 +8,7 @@ def add_todo():
 
 todos = functions.get_todos()
 
-st.title("April's To-Do App")
+st.title("My To-Do App")
 st.subheader("Simplify Your Day, Every Day ")
 st.write("Let's get organized!")
 
